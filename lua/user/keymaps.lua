@@ -7,6 +7,12 @@ vim.g.maplocalleader = " "
 
 keymap("n", "<C-i>", "<C-i>", opts)
 
+-- Resize with arrows
+keymap("n", "<C-i>", ":resize +2<CR>", opts)
+keymap("n", "<C-k>", ":resize -2<CR>", opts)
+keymap("n", "<C-j>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-l>", ":vertical resize +2<CR>", opts)
+
 -- Better window navigation
 keymap("n", "<m-h>", "<C-w>h", opts)
 keymap("n", "<m-j>", "<C-w>j", opts)
@@ -37,6 +43,10 @@ vim.keymap.set("n", "<Tab>", "<cmd>:popup mousemenu<CR>")
 -- more good
 keymap({ "n", "o", "x" }, "<s-h>", "^", opts)
 keymap({ "n", "o", "x" }, "<s-l>", "g_", opts)
+
+-- -- Navigate buffers
+-- keymap("n", "<S-l>", ":bnext<CR>", opts)
+-- keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- tailwind bearable to work with
 keymap({ "n", "x" }, "j", "gj", opts)
