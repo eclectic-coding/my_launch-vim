@@ -41,7 +41,7 @@ vim.keymap.set("n", "<RightMouse>", "<cmd>:popup mousemenu<CR>")
 vim.keymap.set("n", "<Tab>", "<cmd>:popup mousemenu<CR>")
 
 -- more good
-keymap({ "n", "o", "x" }, "<s-h>", "^", opts)
+keymap({ "n", "o", "x" }, "<s-h>", "$", opts)
 keymap({ "n", "o", "x" }, "<s-l>", "g_", opts)
 
 -- -- Navigate buffers

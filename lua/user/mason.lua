@@ -12,9 +12,9 @@ function M.config()
     "cssls",
     "html",
     "tsserver",
-    "pyright",
     "bashls",
     "jsonls",
+    "rubocop"
   }
 
   require("mason").setup {
